@@ -8,42 +8,51 @@
 <body>
  <h3>Hotel Booking</h3>
  <form method="POST" action="https://angsila.cs.buu.ac.th/~wittawas/632/88726059/lab02/afile.php">
- <label for="emotion">Room type:</label>
- <select name="emotion">
- <option value="0">--Select one--</option>
- <option value="1">Happy</option>
- <option value="2">Sad</option>
- <option value="3">Fun</option>
- <option value="4">Fun</option>
-</select>
+<table>
+ <tr><td><label for="name">Room type</label></td>
+ <td><select name="roomtype">
+    <option value="0">Please Select</option>
+    <option value="1">Standard</option>
+    <option value="2">Luxury</option>
+    <option value="3">Deluxe</option><td></tr>
 
+<tr><td><label for="name">Name of Guests</label><td>
+<td><select name="numguest">
+    <option value="0">Please Select</option>
+    <option value="1-2">1-2</option>
+    <option value="3-4">3-4</option>
+    <option value="5-6">5-6</option>
+    <option value="7-8">7-8</option><td></tr>
  
+<tr><td><label for="name">Name</label><td>
+<td><input type="text" name="fame" id="fame"><input type="text" name="lanme" id="lanme"></td></tr>
  
-    <label for="passwd">รหัสผ่าน:</label><br>
- <input type="password" name="passwd" id="passwd">
- <br><br>
- <label for="sex">เพศ:</label><br>
- <input type="radio" name="sex" id="sex" value="M">ชาย
- <input type="radio" name="sex" id="sex" value="F">หญิง
- <br><br>
- <label for="choice">งานอดิเรก:</label><br>
- <input type="checkbox" name="choice1" id="choice1" value="1">ดูหนัง
- <input type="checkbox" name="choice2" id="choice2" value="2">ฟังเพลง
- <input type="checkbox" name="choice3" id="choice3" value="3">เล่นเกม
- <br><br>
- <label for="emotion">ความรู้สึกตอนนี้:</label><br>
- <select name="emotion">
- <option value="0">--Select one--</option>
- <option value="1">Happy</option>
- <option value="2">Sad</option>
- <option value="3">Fun</option>
- </select>
- <br><br>
- ข้อเสนอแนะ:<br>
- <Textarea name="commmet" id="comment" rows="5" cols="50"></Textarea>
- <br><br>
- <input type="submit" value="Send">
- <input type="reset" value="Clear">
- </form>
+<tr><td><label for="name">Email</label><td>
+<td><input type="text" name="email" id="email"></td></tr>
+ 
+<tr><td><label for="name">Arrival</label><td>
+<td><input type="date" name="arrivaldate" id="arrivaldate">
+<input type="time" name="arrivaltime" id="arrivaltime"></td>
+</tr> 
+
+<tr><td><label for="name">Departure</label><td>
+<td><input type="date" name="departuredate" id="departuredate"><input type="time" name="departuretime" id="departuretime"></td></tr>
+</tr>
+
+<tr><td><label for="Pickup">Free Pickup</label><td>
+<td><input type="radio" name="pickup" id="pickup" value="Yes">Yes,Sure!<br>
+<input type="radio" name="pickup" id="pickup" value="No">No,I already ranted a car</td></tr>
+
+<tr><td><label for="name">Flight Number</label><td>
+<td><input type="text" name="flightnum" id="flightnum"></td></tr>
+ 
+<tr><td>Other requests<td>
+<td><Textarea name="otherreq" id="comment" rows="5" cols="50"></Textarea></td>
+</tr>
+ 
+<td></td>
+<tr>
+    <tr><td></td><td><input type="submit" value="Complete Reservation"></td></tr>
+</form>
 </body>
 </html>
